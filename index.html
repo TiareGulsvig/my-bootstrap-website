@@ -1,85 +1,284 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Raleway", sans-serif
+  }
+</style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-    <title>Butter</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-functions.js"></script>
+
+    <!-- Comment out (or don't include) services that you don't want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-storage.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
 </head>
+<body class="w3-light-grey">
 
+  <!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:950px">
 
-<body>
-    <!-- Begin Boostrap/apocalypse container. -->
-    <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">Butter Enthusiast</h1>
-                <p class="lead"> Finally a website for all butter enthusiasts!
-                </p>
-                <hr class="my-4">
-                <p> From solid to soft, you will find all types of butter at the click of a button.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>#TeensToo</b></h1>
+      <p>Welcome to a safe<span class="w3-tag">haven!</span></p>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="https://picjumbo.com/wp-content/uploads/busy-city-streets-at-night_free_stock_photos_picjumbo_DSC00906-2210x1473.jpg"
+            alt="Nature" style="width:100%">
+          <div class="w3-container">
+            <h3><b>My Version</b></h3>
+            <h5>Monstermachine11 <span class="w3-opacity"> December 1, 2018</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p></p>Everyone says that women are the only victims of assault & abuse, but no one talks about the other
+            gender. Men can be just as objectified as women. Many people also think that men shouldn't be able to cry,
+            but their wrong. I am a human being; I have feelings like everyone else, and I deserve to express my
+            feelings as well. </p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+              </div>
             </div>
+          </div>
+        </div>
+        <hr>
 
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="https://images.pexels.com/photos/327308/pexels-photo-327308.jpeg?cs=srgb&dl=dark-dawn-evening-327308.jpg&fm=jpg"
+            alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>My Story</b></h3>
+            <h5> Kitty_05 <span class="w3-opacity"> April 6, 2018</span></h5>
+          </div>
 
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                    <img class="card-img-top" src="https://cdn1.medicalnewstoday.com/content/images/articles/321/321990/close-up-of-block-of-butter-being-sliced-may-raise-cholesterol.jpg"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Peeling butter like a potato. ~</h5>
-                        <p class="card-text">Here, you can see that this room temperature butter is being peeled. Yep.</p>
-                        <a href="#" class="btn btn-primary">Go away</a>
-                    </div>
-                </div>
+          <div class="w3-container">
+            <p>I am seventeen years old and ever since I was fourteen I have never been able to walk home during night
+              time . Simply for the reason that I don't feel safe because I am constantly living in fear that I will be
+              kidnapped or sexually assualted or worse. The police and society say they do their best to protect the
+              citizens of the city but I think it's a lie because because if something were to happen to me no one else
+              would be blamed but me. This is what our society has come to.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+              </div>
             </div>
+          </div>
+        </div>
+        <!-- END BLOG ENTRIES -->
+      </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                    <img class="card-img-top" src="https://www.craftsy.com/a/general/wp-content/uploads/2013/08/buttersoft.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"> This butter is too soft! ~</h5>
-                        <p class="card-text"> Is there such thing as butter that's too soft?</p>
-                        <a href="#" class="btn btn-primary">Go away</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+          <div class="w3-container w3-white">
+            <h4><b>Welcome no matter who you are you are appreciated here.</b></h4>
+            <p> Everything you post here is anonymously. Just remember that we are all here to support each other and
+              help one another overcome traumatic experiences.</p>
+          </div>
+        </div>
+        <hr>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                    <img class="card-img-top" src="https://www.goodfood.com.au/content/dam/images/g/t/b/p/t/g/image.related.wideLandscape.940x529.gtbpv2.png/1481837917287.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"> Smol curly boi. ~</h5>
-                        <p class="card-text"> Satisfying smol curl of golden butter on a smol piece of bread.</p>
-                        <a href="#" class="btn btn-primary">Go away</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Posts -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4> Significant Posts</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="https://www.viewbug.com/media/mediafiles/2015/11/21/60639491_large.jpg" alt="Image" class="w3-left w3-margin-right"
+                style="width:50px">
+              <span class="w3-large">My Version</span><br>
+              <span> Everyone says ...</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="https://c1.staticflickr.com/1/926/29444999748_c7e18f67d0_b.jpg" alt="Image" class="w3-left w3-margin-right"
+                style="width:50px">
+              <span class="w3-large">My Story</span><br>
+              <span> I am thirteen ...</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="https://i.pinimg.com/236x/07/f8/ff/07f8ff550baebb0c2d1d0612a76ee759--disney-love-disney-art.jpg"
+                alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Double Standards</span><br>
+              <span> Why is being ...</span>
+            </li>
+            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8aNA1FYUIQLxEBFfQvYiBTvqIUHUh156fRFppzk4T8bM_N4H"
+                alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">A Broken Society</span><br>
+              <span> What has society...</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                    <img class="card-img-top" src="https://scontent-lht6-1.cdninstagram.com/vp/d88b084e44713e427a479d59ecb882c4/5BF50DF5/t51.2885-15/e35/37126483_288630808361098_3161024448715292672_n.jpg?ig_cache_key=MTgzMDkxNzg0NjA3MjYyMTgyMg%3D%3D.2" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title"> Pasteurised butter. ~</h5>
-                        <p class="card-text"> Here is a special ol' box of good old fashioned butter.</p>
-                        <a href="#" class="btn btn-primary">Go away</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Labels / tags -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <p><span class="w3-tag w3-light-grey w3-margin-bottom">Timetorise </span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fearless</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">StrongerTogether</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Wewillnotsurrenderwithoutafight</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Survivor</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Warriors</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Understand</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Brave</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hope</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Youth</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">family</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Happy</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Worried</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Help</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Coping</span>
 
+
+            </p>
+          </div>
         </div>
 
+        <!-- END Introduction Menu -->
+      </div>
+
+      <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+  </div>
+
+
+  <!-- Trigger/Open the Modal -->
+  <button onclick="document.getElementById('id01').style.display='block'"
+  class="w3-button">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+
+        <script>
 
 
 
-        <!-- Zombie apocalypse! Pack all of your butter! Kidding, this is the end of the container. -->
+            function contactScript(value) {
+                // Initialize Firebase
+                console.log("hi");
+                var config = {
+                    apiKey: "AIzaSyCEo_uE-cFkKNV9P86Ck58a5y1u-gxayqU",
+                    authDomain: "teens-2.firebaseapp.com",
+                    databaseURL: "https://teens-2.firebaseio.com/",
+                    projectId: "teens-2",
+                    storageBucket: "teens-2.appspot.com",
+                    messagingSenderId: "446556732264"
+                };
+                firebase.initializeApp(config);
+                var b = firebase.database().ref("posts");
+                $("#newContact").submit(function (a) {
+                $(this), console.log("Submit to Firebase");
+                    var c = $("#txt").val(),
+                        d = $("#title").val(),
+                        e = $("#username").val(),
+                        f = { txt: c, title: d, username: e };
+                    return b.push(f).then(function (a) {
+                        $(".sucess").css("display", "block"),
+                            $(".sucess-none").css("display", "none")
+                    }), !1
+                })
+            }
+
+
+        function printDiv()
+        {
+          var inputContents="";
+          var input = document.getElementsByTagName('input')
+          for(i=0; i< (input.length - 1); i++)
+          {
+            inputContents += input[i].name + ":" + input[i].value + "<br>";
+          }
+
+          var printContents = inputContents;
+          w = window.open()
+          w.document.write(printContents);
+
+
+        }
+        </script>
+
+        <form class="w3-container">
+
+          <label>Title:</label>
+          <input class="w3-input" type="text" name="title" id="title">
+
+
+          <label>Username:</label>
+          <input class="w3-input" type="text" name="username" id="username">
+
+          <label>Text:</label>
+          <input class="w3-input" type="text" name="txt" id="txt" >
+
+          <input type="submit" onclick="printDiv()" value="Post">
+
+
+        </form>
+
+
+
+      </div>
     </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+    <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+  </footer>
+
 </body>
 
 </html>
